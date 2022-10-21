@@ -1,17 +1,29 @@
 import React, { Component } from 'react';
 import './App.css';
 import Banner from './Banner';
-import Exhibit from './Exhibit';
+import Container from './Container';
+import AddressDisplay from './AddressDisplay';
+import PylonConnector from './PylonConnector';
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <Banner bannerText="Sextant" />
-                <Exhibit name="I'm an exhibit!"></Exhibit>
-                <Exhibit name="I'm also an exhibit!"></Exhibit>
-                <Exhibit name="Don't forget about me, I'm an exhibit too!"></Exhibit>
-            </div>
+          <div className="App">
+            <img
+              className="image"
+              src="https://pbs.twimg.com/profile_images/1580961507566751744/2pydn4GY_400x400.jpg"
+            />
+            <Banner bannerText="Cisco's Sextant" />
+            <Container name="Public IPv4 Address">
+              <AddressDisplay url="https://api.ipify.org?format=json" />
+            </Container>
+            <Container name="Public IPv6 Address">
+              <AddressDisplay url="https://api64.ipify.org?format=json" />
+            </Container>
+            <Container name="Pylon Packet Latency">
+              <PylonConnector />
+            </Container>
+          </div>
         );
     }
 }

@@ -1,27 +1,27 @@
-.Exhibit {
-    float: left;
+.Container {
+    float: center;
     margin: 0.5vw;
     padding: 0vw 2vw 0vw 2vw;
     text-align: center;
-    color: #002933;
+    color: rgb(74, 73, 73);
     background-color: #00b8e6;
     border: 0.25vw solid #005266;
     border-radius: 2vw;
 }
 
-.ExhibitHeading {
+.ContainerHeading {
     font-weight: bold;
-    font-size: 1.75vw;
+    font-size: 3vw;
 }
 
-.ExhibitContent {
-    margin: 0.5vw;
-    padding: 1vw 1vw 1vw 1vw;
+.ContainerContent {
+    margin: 1vw;
+    padding: 10vw 1vw 1vw 1vw;
     text-align: center;
     font-weight: bold;
-    font-size: 1.75vw;
-    color: #002933;
+    font-size: 4vw;
+    color: black;
     background-color: #80e5ff;
-    border: 0.25vw solid #005266;
+    border: 0.25vw solid darkblue;
     border-radius: 2vw;
 }
