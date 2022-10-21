@@ -11,6 +11,7 @@ class App extends Component {
           <div className="App">
             <img
               className="image"
+              alt=""
               src="https://pbs.twimg.com/profile_images/1580961507566751744/2pydn4GY_400x400.jpg"
             />
             <Banner bannerText="Cisco's Sextant" />
@@ -24,6 +25,7 @@ class App extends Component {
               <PylonConnector />
             </Container>
           </div>
+          
         );
     }
 }
